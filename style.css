@@ -5,6 +5,8 @@
     background-color: cadetblue;
     float: left;
     display: flex;
+    left: 500px;
+    position: absolute;
 }
 
 .flag{
@@ -14,7 +16,10 @@
     float: left;
     display: flex;
     background-color: green;
-    display: none;
+    right: 460px;
+    animation-name: flagg;
+    animation-timing-function: linear;
+    animation-duration: 1s;
 }
 
 .blue{
@@ -33,5 +38,6 @@
 }
 
 .circle:hover + .flag{
-    display: block;
+    transition-duration: 2s;
+    right: 0;
 }
